@@ -1,0 +1,626 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>YTubeLytics | User Manual</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="YTubeLytics">
+	<meta name="copyright" content="YTubeLytics">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2016-05-12T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png" />
+
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		/* #documenter_sidebar #documenter_logo{background-image:url(../assets/images/logo.png);} */
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-YTubeLytics">
+	<div id="documenter_sidebar">
+		<br>
+		<img src="../assets/images/logo.png" style='width:200px;'>
+
+		<ul id="documenter_nav">				
+			<li><a href="#key_features" title="Key Features">Key Features</a></li>			
+			<li><a href="#how_to_install" title="How to Install">How to Install</a></li>
+			<li><a href="#administration" title="Administration">Administration/Settings</a></li>			
+			<li><a href="#usage_log" title="Usage Log">Member Usage Log</a></li>			
+			<li><a href="#payment_his_member" title="Usage Log">Member Payment History</a></li>			
+			<li><a href="#import_channel" title="Import Channel & Video">Import Channel & Video</a></li>			
+			<li><a href="#channel_analytics" title="Channel Analytics">Channel Analytics</a></li>			
+			<li><a href="#video_analytics" title="Video Analytics">Video Analytics</a></li>			
+			<li><a href="#upload_video" title="Upload Scheduled Video">Upload Scheduled Video</a></li>			
+			<li><a href="#live_event" title="Upload Scheduled Video">Live Event & Keyword Rank</a></li>			
+			<li><a href="#backlink_scraper" title="Keyword and Backlink Scraper">Keyword Scraper</a></li>			
+			<li><a href="#keyword_suggestion" title="Auto Keyword Suggestion">Auto Keyword Suggestion</a></li>		
+			<li><a href="#subcribe_btn" title="Subscribe Button Plugin">Subscribe Button Plugin</a></li>		
+			<li><a href="#downloader" title="Custom Video Downloader">Custom Video Downloader</a></li>		
+			<li><a href="#video_search_engine" title="Video Search Engine">Video Search Engine</a></li>		
+			<li><a href="#channel_search_engine" title="Channel Search Engine">Channel Search Engine</a></li>		
+			<li><a href="#playlist_search_engine" title="Playlist Search Engine">Playlist Search Engine</a></li>		
+			<li><a href="#video_position_tracking" title="Video Rank Tracking">Video Rank Tracking</a></li>	
+			<li><a href="#cron_job_scheduler" title="Cron Job/Scheduler">Cron Job Settings</a></li>	
+			<li><a href="#update" title="update">How to Update?</a></li>	
+		</ul>
+	</div>
+	<div id="documenter_content">
+	
+
+<br>
+
+<img src="../assets/images/logo.png" style="display: block;""></a>
+<br>
+<h1>User Manual</h1><hr>
+<ul>
+	<li>created: 1st August 2017</li>
+	<li>latest update: 2nd February 2019</li>
+	<li>by: <a href="http://xeroneit.net">XerOne IT</a> </li>
+	<li><a href="http://codecanyon.net/user/xeroneitbd">codecanyon.net/user/xeroneitbd</a></li>
+	<li>email: <a href="mailto:konokronok@gmail.com">konokronok@gmail.com</a></li>
+	</ul>
+
+<section id="key_features">
+YTubeLytics is All-in-one Youtube tools combine with 12 different kinds of feature for Youtube. It's the most complete analytics & maketing tools 
+for Youtube. Both Channel and each video analytics are available. You can schedule video upload with it.Not only that we have the option to 
+create live event easily with the application. It has best complete search option for youtube video. All the advance parameter for searching 
+Youtube video. Playlist, channel search engine are also available. After searching video, you will able to download video. The tool has feature
+to grab video tags that they have used. And many more , just have look on the feature list below. 
+
+Note that,  it has multiuser and SaaS facilities for extended license only.PayPal and Stripe are integrated for getting payment from users. 
+Regular license is for single user only.
+
+But keep in mind that we don’t allow to sell service via JVZoo, WarriorPlus, Zaxaa,ClickBank and same other places.
+
+<br><br><br><br>
+<table width="100%">
+	<tr>
+		<td><b>API Configuration</b><br><br><iframe width="100%" height="380" src="https://www.youtube.com/embed/OagAhWO0Mow" frameborder="0" allowfullscreen></iframe></td>
+		<td><b>Full Demo Video</b><br><br><iframe width="100%" height="380" src="https://www.youtube.com/embed/yj-Wi_eA5f4" frameborder="0" allowfullscreen></iframe></td>
+	</tr>
+</table>
+
+
+
+<br><br><br><br>
+
+	<div class="page-header"><h3>Key Features</h3><hr class="notop"></div>
+
+               <br/> 
+               	1. Import Channel & Videos<br/>
+				2. Channel Analytics<br/>
+				3. Video Analytics<br/>
+				4. Live Event Creation<br/>
+				5. Upload Scheduled Videos<br/>
+				6. Video Rank Tracking<br/>
+				7. Keyword Scrapper<br/>
+				8. Auto Keyword Suggestion<br/>
+				9. YouTube Subscribe Button<br/>
+				10. Video Search Engine<br/>
+				11. Channel Search Engine<br/>
+				12. Playlist Search Engine<br/>
+				13. Custom Video Downloader<br/>
+				14. Multi-user SaaS : PayPal & Stripe (Extended License)<br/>
+        
+</section>
+
+
+
+<section id="how_to_install">
+	<div class="page-header"><h3>How to Install</h3><hr class="notop"></div>
+<h5>
+	<u>Server Configuration:</u></h5>
+<ul>
+	<li>
+		PHP v5.4 / v5.5 / v5.6 / v7.0 &amp; MySQL v5.x</li>
+	<li>
+		Make sure  <strong>curl, mbstring, allow_open_url, set_time_limit, mod_rewrite, mysqli support </strong> are enabled in your server.</li>
+	<li>
+		Make sure  <strong>open_basedir</strong> has no value set and <b>safe_mode</b> is on.</li>
+</ul>
+<p>
+	[Note: If you get <em>&quot;404 page not found&quot;</em> error then first make sure <b>.htaccess</b> file was uploaded properly in the app root and make <strong>AllowOverride</strong> in your virual host.]</p>
+<h5>
+	<u>Installation Manual:</u></h5>
+<ol>
+	<li>
+		<strong>Download </strong>.zip package</li>
+	<li>
+		<strong>Upload </strong>it to your server</li>
+	<li>
+		<strong>Extract </strong>the package</li>
+	<li>
+        <p>Please make sure that the following folders (and child files)  or files have write permission (777 or 755)</p>
+        <p>
+          </p><ul>
+            <li>Folder : application/config</li>
+            <li>Folder : application/core</li>
+            <li>Folder : upload</li>
+            <li>Folder : download</li>
+            <li>File : application/install.txt</li>
+          </ul>
+        <p></p>
+	</li>
+	<li>
+		<strong>Run </strong>the installer url via browser (http://yourdomain.com/.../ytubelytics/) and you will find a interface to provide the <strong>settings </strong>for <strong>YTubeLytics</strong>:
+		<ul>
+			<li>
+				<strong>Hostname </strong>: database host name / IP</li>
+			<li>
+				<strong>Database Name</strong> : create a mysql database for <strong>YTubeLytics </strong>on your host and write that name here</li>
+			<li>
+				<strong>Database username</strong>&nbsp; : username of the created database</li>
+			<li>
+				<strong>Database password</strong> : password of the created database</li>
+			<li>
+				<strong>YTubeLytics Admin Panel Login Email</strong>: this will be used to login as admin</li>
+			<li>
+				<strong>YTubeLytics Admin Panel Login Password</strong> : password to log in as admin</li>			
+			<li>
+				<strong>Company Name and Company Address</strong></li>
+			<li>
+				<strong>Company Phone /&nbsp; Mobile</strong> : with country code</li>
+		</ul>
+	</li>
+	<li>
+		Click <strong>Install YTubeLytics Now</strong> Button</li>
+	<li>
+		You are done.<strong> Log in</strong> with your admin username and password and start using <strong>YTubeLytics</strong>.</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+<img src="assets/images/install.png">
+</section>
+
+
+
+
+<section id="administration">
+	<div class="page-header"><h3>Administration</h3><hr class="notop"></div>
+<h4 id="administration_settings_gt_general_settings">Settings &gt; General Settings [Only Admin]</h4>
+<ul>
+	<li>
+		This is the place where you can change company information, logo,favicon, time zone, product name etc.</li>
+	<li>
+		Here is the snapshot. Happy customization :)</li>
+</ul>
+<p> <img src="assets/images/general.png"> <p>
+	&nbsp;</p>
+<h4 id="administration_settings_gt_email_settings_system_smtp_email_">Settings &gt; Email Settings (System SMTP Email: Only Admin)</h4>
+<ul>
+	<li>
+		This is the place to configure system email.</li>
+	<li>
+		You can add any SMTP email provider here.</li>
+	<li>
+		These settings will be used to send system emails like forget password, send notification etc.</li>
+</ul>
+<p>
+	<img alt="" src="data:image/png;base64,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"></p>
+<p>
+	&nbsp;</p>
+
+
+<h4 id="administration_settings_gt_connectivity_settings">Settings &gt; Connectivity Settings (Required for Admin, Optional for Users)</h4>
+<ul>
+<li>
+This settings is optional for member users, if member do not provide a key, system will use admin's API key. Admin must have to put a key.
+<br/>To get your Google API Key,<a href="https://www.youtube.com/watch?v=OagAhWO0Mow" target="_BLANK"> watch this video to learn how to create a google api key</a> 
+<br/>Remeber that you have to enable the following API aginst your API key : <b>YouTube Data API v3, Google Maps JavaScript API</b>
+
+<br/>
+</li>
+
+	<li>
+		Now you everything you need. All you have to do is to use the information to configure <strong>YTubeLytics</strong>.</li>
+</ul>
+<p><img src="assets/images/connectivity.png">
+<p>&nbsp;</p>
+
+<h4 id="administration_settings_gt_yt_settings">Settings &gt; Youtube Settings (Only Admin | Required)</h4>
+<ul>
+<li>
+Admin must have to put Google Client ID & Google Client Secret. It will be needed to import new youtube channels and videos. 
+<br/>To get your Google Client ID & Google Client Secret,<a href="https://www.youtube.com/watch?v=OagAhWO0Mow" target="_BLANK"> watch this video to learn how to Client ID & Google Client Secret</a> 
+<br/>Remeber that you will need a redirect url when you create Client ID & Google Client Secret. Copy your redirect url from the top section of the page : Settings &gt; Youtube Settings > Add</b>
+
+<br/>
+</li>
+
+	<li>
+		Now you everything you need. All you have to do is to use the information to configure <strong>YTubeLytics</strong>.</li>
+</ul>
+<p><img src="assets/images/yt_setting.png">
+<p>&nbsp;</p>
+
+
+
+
+
+<h4 id="administration_user_management">User Management [Only Admin]</h4>
+<ul>
+	<li>
+		<strong>YTubeLytics</strong> is a muti-user application with the SaaS (Software as a Service) functionality. It needs an extended license to enable the SaaS facilty.</li>
+	<li>
+		It consists of two types of user : <strong>admin level &amp; user level (end user)</strong></li>
+	<li>
+		Both&nbsp; will have similar features except only admin users will have access to &quot;<strong>Administrative</strong>&quot; menu.</li>
+	<li>
+		Admin will configure the system through general settings, email settings, connectivity settings, payment settings etc while end users will use the system &amp; will pay monthly service charge for using the system. It has feature to recieve payment via PayPal & Stripe will be discussed later in this documentation.</li>
+</ul>
+<ul>
+	<li>
+		In user management admin users will have access to add, view, disable, enable, edit, reset password, delete users.</li>
+	<li><h5>Note: if you add an user manually, then after addition edit the user to assign subscription package and expiry date manually.</h5></li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>User List</strong></p>
+<p> <img alt="" src="assets/images/user-list.png">
+	<p>
+	<strong>User Add Form</strong></p>
+<p><img alt="" src="assets/images/user-add.png">
+	<p>
+	<strong>User Edit Form [Assign Package & Expiry Date]</strong></p>
+<p><img alt="" src="assets/images/user-edit.png">
+	<p><p>
+	&nbsp;</p>
+<h4 id="administration_send_notification_email_to_users_">Send Notification (email to users) [Only Admin]</h4>
+<ul>
+	<li>
+		You can send email (festival greetings or maintenance notification) manually to any users.</li>
+	</ul>
+<img alt="" src="assets/images/notification.png"><p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4 id="administration_payment_gt_dashboard">Payment &gt; Dashboard [Only Admin]</h4>
+<p>
+	This is place where you can see your collection report graphically.</p>
+<p><img src="assets/images/paymwent-dashboard.png"><p>
+	&nbsp;</p>
+	<h4 id="administration_payment_gt_settings">Payment &gt; Payment Settings [Only Admin]</h4>
+<p>
+	This is the place where you set your PayPal account / Stripe account or both and your currency. Your end users will pay to this PayPal account/ Stripe account.</p>
+<p>
+<img src="assets/images/payment_settings.png">
+<p>
+	&nbsp;</p>
+<h4 id="administration_package_settings">Payment > Package Settings [Only Admin]</h4>
+<p>
+<ul>
+	<li>You can create subscription plans or packages here. The system will automatically create a package named "Trial" with 7 days validity, so that, your users can try it and remeber that you can not delete this default package.
+	<br/><br/><img src="assets/images/pack0.png"><br/><br/></li>
+	<li>Suppose you want to create a package named "basic" which validity will be 30days, price will be UDS 10 and you want to assign specific modules for this package. In this case you are lucky!! 
+	You can add unlimited packages you want including price,validity and modules. You can also put monthly analysis limit for each module when you create a package. 
+	While you assign limits, 0 (zero) means unlimited. When you create an package you must allow "Import Account" module.
+	<br/><br/><img src="assets/images/pack1.png"><br/><br/></li>
+	<li> If you do not want a trial then edit deafult package's validity to 0 (zero).
+	<br/><br/><img src="assets/images/pack2.png"><br/><br/></li>
+	<li>If you do not want to take money from users then edit the default package's price to "Free".
+	<br/><br/><img src="assets/images/pack3.png"><br/><br/></li>
+	</ul>
+	</p>
+
+	<p></p><p></p>
+<h4 id="administration_payment_gt_payment_history">Payment &gt; Payment History [Admin will have all and users will have own report]</h4>
+<p>
+	History of all payment made by end users. You can search be name or payment date.</p>
+<p>
+	<img alt="" src="assets/images/payment_his.png"></p>
+<p>
+	&nbsp;</p>
+
+
+
+
+
+
+
+
+<section id="usage_log">
+	<div class="page-header"><h3>Usage Log [Member Only]</h3><hr class="notop"></div>
+	This menu only shows in user panel. This page shows usage log of a member user.
+	<br/><br/>
+	<img src="assets/images/usage_log.png">	
+</section>
+
+<section id="payment_his_member">
+	<div class="page-header"><h3>Payment History [Member Only]</h3><hr class="notop"></div>
+	This menu only shows in user panel. This page shows payment history a member user made. Memebr user can also buy/switch package from here.
+	<br/><br/>
+	<img src="assets/images/payment_his_member.png">	
+</section>
+
+
+
+<section id="import_channel">
+	<div class="page-header"><h3>Import Channel & Video</h3><hr class="notop"></div>
+	You can import your youtube channels and videos in this sytem by simple login using your google account. You can login with different google acount and all channels & videos of all accounts will be imported. You will be rediredted to channel list page after successful login.
+	<br/><br/>
+	<b>Login with google</b><br/>
+	<img src="assets/images/import.png">	
+</section>
+
+
+<section id="channel_analytics">
+	<div class="page-header"><h3>Channel Analytics</h3><hr class="notop"></div>
+	This will help you to get better overview of your channel through the chart to help you promptly own strategies to improve and develop a better way channel. Clicking this you will get your imported channel and two links ( "Channel Analytics" and "Channel's Video" ) for each channel. Clicking "Channel Analytics"  button will show you the channel statistic and clicking "Video Anlytics" will show the video list of that channel. You can also see the statistics of each video by clicking "Channel's Video" button. Video analytics is described in <a href="#!/video_analytics">Video Analytics</a> menu.</li><br/>
+		<h5>Channel Analytics:</h5>
+		
+			<ol>
+				<li>Views (Viewed by day statistics)</li>
+				<li>Unique Views</li>
+				<li>Watch (Statistics total minutes and average time on the video output view)</li>
+				<li>The statistics views data on channels by gender and age group</li>
+				<li>Subscriber Vs Unsubscriber</li>
+				<li>Likes Vs Dislikes</li>
+				<li>Video Added Vs Removed From Playllist</li>
+				<li>Comments And Shares</li>
+				<li>Country Wise Views</li>
+				<li>Top 10 Countries</li>
+				<li>Annotation Impressions</li>
+				<li>Annotation Clicks and Closes Impressions</li>
+				<li>Annotation Clicks and Closes</li>
+				<li>Device Type Report</li>
+				<li>Operaing System Report</li>
+			</ol>
+	<br/>
+	<b>Channel List</b><br/>
+	<img src="assets/images/youtube_analytics1.png"><br/><br/><br/><br/>
+	<b>Analytics</b><br/>
+	<img src="assets/images/youtube_analytics2.png"><br/><br/><br/><br/>	
+</section>
+
+
+
+<section id="video_analytics">
+	<div class="page-header"><h3>Video Analytics</h3><hr class="notop"></div>
+		The landing page will show all imported videos of all channels. You can see statistrics of a video by clicking  "Analytics" button.
+		<br/>
+		<h5>Video Analytics:</h5>		
+		<ol>
+			<li>Views (Viewed by day statistics)</li>
+			<li>Unique Views</li>
+			<li>Watch (Statistics total minutes and average time on the video output view)</li>
+			<li>The statistics views data on channels by gender and age group</li>
+			<li>Subscriber Vs Unsubscriber</li>
+			<li>Likes Vs Dislikes</li>
+			<li>Video Added Vs Removed From Playllist</li>
+			<li>Comments And Shares</li>
+			<li>Country Wise Views</li>
+			<li>Top 10 Countries</li>
+			<li>Annotation Impressions</li>
+			<li>Annotation Clicks and Closes Impressions</li>
+			<li>Annotation Clicks and Closes</li>
+			<li>Device Type Report</li>
+			<li>Operating System Report</li>
+			<li>Audience Retention</li>
+		</ol>
+	<br/>
+	<img src="assets/images/video_analytics2.png"><br/><br/><br/>
+	<img src="assets/images/video_analytics.png"><br/>
+</section>
+
+
+<section id="upload_video">
+	<div class="page-header"><h3>Upload Scheduled Video</h3><hr class="notop"></div>
+	You can upload videos in your youtube channel from this app. You can also schedule when the video will be uploaded. The system will upload the vide as your schedule.
+	<br/><br/>
+	<img src="assets/images/upload.png">	
+</section>
+
+<section id="live_event">
+	<div class="page-header"><h3>Live Event</h3><hr class="notop"></div>
+	You can create upcomming live events using this app. After you create the live event the system will automatically check it's google video rank and youtube video rank periodically. It will notify you through email when it will be ranked. The email will be sent only once. After that, if you need to know new ranks you have to refresh manually.
+	<br/><br/>
+	<b>Live Event List</b><br/>
+	<img src="assets/images/live1.png">	<br/><br/>
+	<b>Create Live Event</b><br/>
+	<img src="assets/images/live2.png">	
+</section>
+
+
+<section id="backlink_scraper">
+	<div class="page-header"><h3>Keyword  Scraper</h3><hr class="notop"></div>
+	This feature can grab any youtube video's keywords/tags. Simply put the youtube video id and click "Start Scraping", you will get the keywords. You can download the result as csv.
+	<br/><br/>
+	<b>How to find video ID</b> : Visit any youtube video and the id is the part after v= , as for example visit <a href="https://www.youtube.com/watch?v=NXqmvFy9cXE" target="_BLANK">https://www.youtube.com/watch?v=NXqmvFy9cXE</a> , here video ID is NXqmvFy9cXE 
+	<br/><br/>
+	<img src="assets/images/backlink.png">	
+</section>
+
+
+<section id="keyword_suggestion">
+	<div class="page-header"><h3>Auto Keyword Suggestion</h3><hr class="notop"></div>
+	"Auto Keyword Suggestion" can help you to get idea about what type of keywords you should use for your video. Simply type a keyword and it will return 10 important suggestions against that input keyword. You can download the result as csv.
+	<br/><br/>
+	<img src="assets/images/suggestion.png">	
+</section>
+
+
+<section id="subcribe_btn">
+	<div class="page-header"><h3>Subscribe Button Plugin</h3><hr class="notop"></div>
+	Having truble to embed youtube channel's subscribe button to your site? Do not worry, just put your channel ID and this tool will generate the embed code. You can add the code to any websit.
+	<br/><br/>
+	<b>How to find channel ID</b> : Visit any youtube channel and the id is the last part of the url , as for example visit <a href="https://www.youtube.com/channel/UCbuRhRXR8KcHjQfdvqPE7XQ" target="_BLANK">https://www.youtube.com/channel/UCbuRhRXR8KcHjQfdvqPE7XQ</a> , here channel ID is UCbuRhRXR8KcHjQfdvqPE7XQ
+	<br/><br/>
+	<img src="assets/images/subscription.png">	
+</section>
+
+
+<section id="downloader">
+	<div class="page-header"><h3>Custom Video Downloader</h3><hr class="notop"></div>
+	Our Video Downloader allows you to download videos from youtube. Type in the URL in the above field to start the download.
+	<br/><br/><img src="assets/images/download.png"><br/>
+
+</section>
+
+
+
+
+<section id="video_search_engine">
+	<div class="page-header"><h3>Video Search Engine</h3><hr class="notop"></div>
+	<ul>
+		<li>Search for youtube video with keyword and limit.</li>
+		<li>Youtube search has advanced filtering like location , publish date, video type, channel ID, broadcast type, duration, dimension, definitation,license type etc. </li>
+		<li>You will get vidoes with like,dislikes,comments,title,description etc info</li>
+		<li>You will also able to download video and download keywords.</li>
+	</ul>
+	<br/>
+	<b>Youtube Video Searh</b><br/>
+	<img src="assets/images/video_search1.png"><br/>
+
+</section>
+
+
+<section id="channel_search_engine">
+	<ul>
+		<li>Search for youtube channels with keyword, limit and date.</li>
+		<li>You will also able to see channel playlist and videos.</li>
+	</ul>
+	<img src="assets/images/channel_search.png"><br/>
+
+</section>
+
+<section id="playlist_search_engine">
+	<ul>
+		<li>Search for youtube playlists with keyword, limit, channel id and date.</li>
+		<li>You will also able to see playlist videos.</li>
+	</ul>
+	<img src="assets/images/playlist_search.png"><br/>
+
+</section>
+
+
+
+
+
+<section id="video_position_tracking">
+	<div class="page-header"><h3>Video Rank Tracking</h3><hr class="notop"></div>
+	<ul>
+		<li>Track the rank of youtube video against prticular keyword everday. </li>
+		<li>Users will simply set theirs keywords & videos for tracking position once. System will automatically get position/rank everyday. </li>
+		<li>Users can see tracking report anytime with date interval search. </li>
+	</ul>
+	<br/>
+	<img src="assets/images/video_tracking1.png"><br/>
+
+
+</section>
+
+
+<section id="cron_job_scheduler">
+	<div class="page-header"><h3>Cron Job Settings [Only Admin]</h3><hr class="notop"></div>
+	Video rank tracking and scheduled video upload needs cron jobs to complete time to time tasks. You have to set 2 cron jobs in your server. You will find the cron job commands in your admin panel > cron job settings menu. Cron job commands needs a API key key. Generate your api key then copy the cron job commands and set to your server.
+		<br/><img src="assets/images/cron.png"><br/>	
+		<img src="assets/images/cron2.png"><br/>
+</section>
+
+
+<section id="update">
+		<div class="page-header"><h3>How to Update</h3><hr class="notop"></div>	
+
+		<div class="alert alert-info">
+		Update - v1.2 to v1.3</div>
+		<p>1. Download v1.3</p>
+		<p>2. Copy/Replace your following files and folders taking from v1.3  
+			<ul>
+				<li>application/controllers/home.php</li>
+				<li>application/librarirs/google_youtube_login.php</li>
+				<li>application/librarirs/Google_youtube/Service/YouTubeAnalytics.php</li>
+			</ul>			
+		</p>
+		<p>3. Open application/config/my_config.php and update 'product_version' to 1.3</p>
+		<p>4. You are done.</p>	
+
+		<div class="alert alert-info">
+		Update - v1.1 to v1.2</div>
+		<p>1. Download v1.2</p>
+		<p>2. Copy/Replace your following files and folders taking from v1.2  
+			<ul>
+				<li>application/controllers/home.php</li>
+				<li>application/controllers/youtube_analytics.php</li>
+				<li>documentation/*</li>
+			</ul>			
+		</p>
+		<p>3. Open application/config/my_config.php and update 'product_version' to v1.2</p>
+		<p>4. You are done.</p>	
+		
+		<div class="alert alert-info">
+		Update - v1.0 to v1.1</div>
+		<p>1. Download v1.1</p>
+		<p>2. Copy/Replace your following files and folders taking from v1.1  
+			<ul>
+				<li>application/controllers/home.php</li>
+				<li>application/controllers/youtube_analytics.php</li>
+				<li>application/views/page/*</li>
+				<li>application/views/admin/theme/*</li>
+				<li>documentation/*</li>
+			</ul>			
+		</p>
+		<p>3. Open application/config/my_config.php and update 'product_version' to v1.1</p>
+		<p>4. You are done.</p>
+
+	</section>
+
+
+
+
+
+</div>
+</body>
+</html>
